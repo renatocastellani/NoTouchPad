@@ -1,0 +1,14 @@
+# NoTouchPad - Dependências principais
+# Processamento de vídeo e detecção
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+
+# Interface gráfica e controle
+pygame>=2.5.0
+pynput>=1.7.6
+PySide6>=6.6.0
+
+# Configuração e utilitários
+Pillow>=10.0.0
+requests>=2.31.0

@@ -1,0 +1,5 @@
+# NoTouchPad - Dependências mínimas para Hello World
+# Apenas tkinter (já vem com Python) + PyInstaller para build
+
+# Build
+pyinstaller>=6.0.0
