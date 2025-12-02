@@ -12,22 +12,24 @@
 - 🎥 **Detecção em tempo real** usando webcam comum
 - 👋 **Reconhecimento de gestos** das mãos via MediaPipe
 - 🎮 **Simulação de gamepad** Xbox/PlayStation compatível  
-- 🪟 **Interface desktop nativa** (PySide6) com fallback web
+- 🪟 **Interface desktop nativa** (PySide6) com ambiente portátil embutido
 - ⚙️ **Configuração personalizada** de mapeamento de gestos
 - 📦 **Executável standalone** - zero dependências para usuário
 - 🌍 **Multiplataforma** - Windows, Linux e macOS
 
 ## ⚡ Instalação Rápida
 
-### Opção 1: Executável (Recomendado)
+### Opção 1: Pacote Portátil (Recomendado)
 ```bash
-# 1. Baixe o executável para seu sistema operacional:
-# Windows: NoTouchPad-windows.exe
-# Linux: NoTouchPad-linux
-# Mac: NoTouchPad-macos
+# 1. Baixe o ZIP do seu sistema (ex.: NoTouchPad-linux.zip)
+# 2. Extraia o conteúdo em uma pasta qualquer
 
-# 2. Execute diretamente - sem instalação!
-./NoTouchPad
+# 3. Rode o launcher correspondente dentro da pasta extraída:
+#    Linux/Mac: ./NoTouchPad.sh
+#    Windows:   NoTouchPad.bat
+
+# O pacote já traz um venv com PySide6;
+# mantenha a pasta ./venv ao lado do launcher.
 ```
 
 ### Opção 2: Código Fonte
@@ -79,6 +81,10 @@ NoTouchPad/
 ```
 
 ### Para Desenvolvedores
+
+pra testar:  depois de garantir que está instalado o venv:
+source notouchpad_build_env/bin/activate && python src/main.py
+
 ```bash
 # Instalar dependências de desenvolvimento (recomendado em venv)
 python3 -m venv .venv && source .venv/bin/activate
